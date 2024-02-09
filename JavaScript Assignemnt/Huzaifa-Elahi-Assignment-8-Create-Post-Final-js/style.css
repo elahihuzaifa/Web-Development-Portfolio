@@ -1,0 +1,153 @@
+body {
+    background-color: #e9effc;
+}
+
+
+
+.card {
+    width: 50% !important;
+    margin: auto;
+    border-radius: 20px !important;
+
+}
+
+h1 {
+    border-bottom-style: groove;
+}
+
+.img-profile {
+    width: 65%;
+    border-radius: 50%;
+    border: 1px solid #dfdada;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid white;
+    outline: none;
+    height: 210px;
+}
+
+.colorPicker {
+    border: none;
+
+}
+
+.colorPicker::-webkit-color-swatch {
+    border-radius: 10px;
+    border: none;
+
+}
+
+.side-1 {
+    border: 2px solid #e4e6eb;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+
+
+.side-1 li {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+}
+
+/* .fa-align-center:before {
+    content: "\f037";
+} */
+
+.side2,
+img {
+    width: 65px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+
+.side-2 li {
+    list-style-type: none;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+textarea {
+    background: transparent;
+    border: none;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+#post-background {
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.form-select {
+    display: block;
+    width: 30%;
+    /* padding: 0.375rem 2.25rem 0.375rem 0.75rem; */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+.content-border {
+    gap: 45px;
+}
+
+.post-button {
+    width: 50%;
+    margin: auto;
+
+}
+
+button {
+    background-color: #e4e6eb !important;
+    color: black !important;
+    font-weight: bolder !important;
+    border: none !important;
+}
+
+button:hover {
+    background-color: blue !important;
+    color: white !important;
+
+}
+
+h5 {
+    cursor: pointer;
+}
+
+.modal-header .btn-close {
+    padding: calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5);
+    margin: calc(-1.5 * var(--bs-modal-header-padding-y)) calc(-.5 * var(--bs-modal-header-padding-x)) calc(-.5 * var(--bs-modal-header-padding-y)) auto;
+}
+
+/* #postSection {
+    visibility: hidden;
+} */

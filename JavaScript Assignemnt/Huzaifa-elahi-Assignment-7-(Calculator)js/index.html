@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator with History</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+      </head>
+      <body>
+        <!-- <div id="calculator">
+          <input type="text" id="display" />
+          <div id="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+          </div>
+        </div>
+        <div id="history">
+          <h2>History</h2>
+          <ul id="history-list"></ul>
+        </div>
+
+        <div class="container"></div>
+        <script src="app.js"></script> -->
+        <!-- <div id="history">
+          <h2>History</h2>
+          <ul id="history-list"></ul>
+
+          <div id="calculator">
+            <input type="text" id="display" disabled />
+            <div class="display" id="display">
+              <div id="history-list"></div>
+            </div>
+            <div id="buttons"> -->
+        <!-- Add buttons here -->
+        <!-- <div id="buttons">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="dis('/')">/</button>
+                <button onclick="appendToDisplay('*')">*</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('+')">+</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <section class="cal pt-5s">
+          <h1 class="text-white text-center pt-5">
+            Calculator
+            <a
+              href="https://github.com/elahihuzaifa"
+              target="_blank"
+              class="fa-brands fa-square-github"
+            ></a>
+          </h1>
+          <div class="container g-0 pt-5">
+            <div class="calculator d-flex pt-5">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="images/navigation-bar.png"
+                    class="img-fluid d-inline-block image-one"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 two_heading">
+                  <h5 class="d-inline-block pt-2 text-start">Standard</h5>
+                </div>
+                <div class="col-md-4 text-end">
+                  <img
+                    src="images/calculator.png"
+                    alt=""
+                    class="text-start img-fluid image-two"
+                  />
+                </div>
+                <div class="col-md-12 py-4">
+                  <!-- <div class="display" id="display"> -->
+                  <div class="history" id="history" class="input-num"></div>
+                  <input type="text" id="display" disabled class="input-num" />
+
+                  <!-- </div> -->
+                </div>
+                <div class="col-md-12 d-flex">
+                  <div id="buttons">
+                    <button onclick="disValue('%')">%</button>
+                    <button onclick="clearDisValue('CE')">CE</button>
+                    <button onclick="clearDisValue('C')">C</button>
+                    <button onclick="removeDisValue('Del')">Del</button>
+                    <button onclick="disValue('7')">7</button>
+                    <button onclick="disValue('8')">8</button>
+                    <button onclick="disValue('9')">9</button>
+                    <button onclick="disValue('/')">÷</button>
+                    <button onclick="disValue('4')">4</button>
+                    <button onclick="disValue('5')">5</button>
+                    <button onclick="disValue('6')">6</button>
+                    <button onclick="disValue('-')">-</button>
+                    <button onclick="disValue('1')">1</button>
+                    <button onclick="disValue('2')">2</button>
+                    <button onclick="disValue('3')">3</button>
+                    <button onclick="disValue('+')">+</button>
+                    <button onclick="disValue('0')">0</button>
+                    <button onclick="disValue('.')">.</button>
+                    <button onclick="calculate()">=</button>
+                    <button onclick="disValue('*')">x</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+        </section>
+        <footer>
+          <h2 class="text-white text-center py-5">Huzaifa Elahi</h2>
+        </footer>
+
+        <script src="app.js"></script>
+      </body>
+    </html>
+  </body>
+</html>
