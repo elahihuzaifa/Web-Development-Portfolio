@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+
+.section1 .container {
+    background: url(images/86vpIkbEsTxKR.jpg!w700wp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 786px;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: rgb(255, 255, 255) 0px 54px 55px, rgba(255, 255, 255) 0px -12px 30px, rgba(255, 255, 255) 0px 4px 6px, rgba(255, 255, 255) 0px 12px 13px, rgba(255, 255, 255) 0px -3px 5px;
+}
+
+.section1 h2,
+h4,
+h5 {
+    color: rgb(255, 255, 255) !important;
+    font-weight: bolder;
+    font-size: 45px;
+}
