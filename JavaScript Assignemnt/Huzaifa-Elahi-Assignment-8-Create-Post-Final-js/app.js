@@ -74,6 +74,7 @@ function setEmoji() {
 var items = document.getElementById("items");
 var textArea = document.getElementById("textarea");
 var postButton = document.getElementById("createPost");
+var itemsbackground = document.getElementById("itemsbackground");
 
 likeSection.style.visibility = "hidden";
 
@@ -81,8 +82,10 @@ function createPost() {
   if (textArea.value === "") {
     postButton.style.display = "block";
     items.style.display = "block";
+    itemsbackground.style.display = "block";
   } else {
     items.style.display = "none";
+    itemsbackground.style.display = "none";
     postButton.style.display = "none";
     likeSection.style.display = "block";
     likeSection.style.visibility = "visible";
