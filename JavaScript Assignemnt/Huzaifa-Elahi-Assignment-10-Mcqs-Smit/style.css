@@ -1,0 +1,46 @@
+@font-face {
+    font-family: josepin sans;
+    src: url(font/JosefinSans-VariableFont_wght.ttf);
+}
+
+
+.user,
+img {
+    border-radius: 50px;
+}
+
+header,
+.headerBtn {
+    border: none !important;
+    background: white !important;
+    color: #0d6db7 !important;
+
+
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: -50% !important;
+    margin-top: var(--bs-dropdown-spacer);
+    margin-top: 8px !important;
+}
+
+.heading1 {
+    color: #0d6db7 !important;
+    font-weight: 300;
+    font-family: ;
+}
+
+.navbar {
+    height: 80px !important;
+    background-color: #fff !important;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .12), inset 0 -1px 0 0 #dadce0;
+}
+
+p {
+    font-family: josepin sans;
+}
+
+.text-smit {
+    color: #0d6db7 !important;
+}
