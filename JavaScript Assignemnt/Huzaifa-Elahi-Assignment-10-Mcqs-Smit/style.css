@@ -3,44 +3,49 @@
     src: url(font/JosefinSans-VariableFont_wght.ttf);
 }
 
-
-.user,
-img {
-    border-radius: 50px;
+@font-face {
+    font-family: josepin sans-light;
+    src: url(font/JosefinSans-Italic-VariableFont_wght.ttf);
 }
 
-header,
-.headerBtn {
-    border: none !important;
-    background: white !important;
-    color: #0d6db7 !important;
-
-
+.version h5 {
+    font-size: 16px;
+    font-family: josepin sans;
+    cursor: pointer;
+    color: #0d6db7;
 }
 
-.dropdown-menu[data-bs-popper] {
-    top: 100%;
-    left: -50% !important;
-    margin-top: var(--bs-dropdown-spacer);
-    margin-top: 8px !important;
+
+
+.sec1_login-page {
+    background-color: #E2ECEF;
 }
 
-.heading1 {
-    color: #0d6db7 !important;
+.sec1_login-page h1 {
+    font-family: josepin sans;
+    cursor: pointer;
+    color: #0d6db7;
     font-weight: 300;
-    font-family: ;
+    font-size: 65px;
 }
 
-.navbar {
-    height: 80px !important;
-    background-color: #fff !important;
+.sec1_login-page h2 {
+    font-family: josepin sans;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 65px;
+}
+
+.sec1_login-page p {
+    font-family: josepin sans-light;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.header1 .bg-body-tertiary {
+    background-color: white !important;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .12), inset 0 -1px 0 0 #dadce0;
 }
 
-p {
-    font-family: josepin sans;
-}
 
-.text-smit {
-    color: #0d6db7 !important;
-}
+
