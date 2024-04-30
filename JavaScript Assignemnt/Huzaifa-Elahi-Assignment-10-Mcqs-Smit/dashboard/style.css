@@ -44,3 +44,9 @@ p {
 .text-smit {
     color: #0d6db7 !important;
 }
+
+.btn_header {
+    display: flex !important;
+    align-items: baseline !important;
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+}

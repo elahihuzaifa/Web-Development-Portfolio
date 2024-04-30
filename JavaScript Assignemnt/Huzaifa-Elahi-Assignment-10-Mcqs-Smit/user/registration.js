@@ -53,18 +53,6 @@ function signinlog() {
     return; // Don't proceed with submission
   }
 
-  //   let user_records = JSON.parse(localStorage.getItem("users")) || [];
-
-  //   let foundUser = user_records.find(
-  //     (v) => v.email === emailSignin && v.password === passwordSignin
-  //   );
-  //   console.log("Found User", foundUser);
-  //   if (foundUser) {
-  //   } else {
-  //     alert("Login unsuccessful");
-  //   }
-  // }
-
   let user_records = JSON.parse(localStorage.getItem("users")) || [];
   let flag = user_records.some(
     (v) => v.email === emailSignin && v.password === passwordSignin

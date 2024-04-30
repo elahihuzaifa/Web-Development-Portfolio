@@ -403,3 +403,44 @@ function calculateScore(e, correct, selectedID) {
     `;
   }
 }
+
+// function userboard() {
+//   var userName = document.querySelector("#userName");
+//   var getfromUserDataFromLocalStorage = JSON.parse(
+//     localStorage.getItem("users")
+//   );
+//   for (var key in getfromUserDataFromLocalStorage) {
+//     console.log(getfromUserDataFromLocalStorage.key);
+//   }
+//   console.log(getfromUserDataFromLocalStorage.names);
+//   userName.innerHTML = `<p>Name:${getfromUserDataFromLocalStorage.name}</p>`;
+// }
+// userboard();
+
+function userboard() {
+  var userName = document.querySelector("#userName");
+  var getfromUserDataFromLocalStorage = JSON.parse(
+    localStorage.getItem("users")
+  );
+
+  // Check if getfromUserDataFromLocalStorage is an array and it's not empty
+  if (
+    Array.isArray(getfromUserDataFromLocalStorage) &&
+    getfromUserDataFromLocalStorage.length > 0
+  ) {
+    userName.innerHTML = [];
+    // Loop through each user object in the array
+    getfromUserDataFromLocalStorage.forEach((user) => {
+      // console.log(user.name);
+      // console.log(user.name);
+      for (var key in user.name) {
+        console.log(user.name[key]);
+        var uservalue = [key];
+      }
+      userName.innerHTML += `<p>${user.name.toUpperCase()}</p>`; // Append each user's name to the inner HTML of #userName
+      // console.log(getfromUserDataFromLocalStorage);
+    });
+  }
+}
+
+userboard();
