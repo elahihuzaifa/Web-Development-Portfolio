@@ -1,0 +1,45 @@
+.headertop-title {
+    border: 2px solid #585858 !important;
+    border-radius: 15px;
+    margin-top: 5px !important;
+    padding: 5px !important;
+    background-color: #585858 !important;
+    font-weight: 600 !important;
+
+}
+
+.back-color-headertop {
+    background-color: #222328 !important;
+}
+
+.month-year {
+    display: grid !important;
+    line-height: 1.2em !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+.text-success {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
+    font-size: 35px !important;
+    padding: 5px Im !important;
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+section {
+    background-color: #222328 !important;
+    /* background: rgba(255, 165, 0, 0.5) !important; */
+}
+
+.card {
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+}
+
+.card img {
+    height: 250px !important;
+}

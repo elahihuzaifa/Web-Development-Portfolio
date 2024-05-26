@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="icon" type="image/x-icon" href="images/weather-app.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-body-tertiary p-0">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/8908652.png"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            WeatherWise
+          </a>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container">
+        <div class="row py-5 justify-content-center">
+          <div class="card py-5 text-center">
+            <div class="search">
+              <input
+                type="text"
+                placeholder="Enter City Name"
+                class="py-3 px-3"
+                spellcheck="false"
+              />
+              <button><img src="images/search.png" alt="" /></button>
+            </div>
+            <div class="weather text-center pt-2">
+              <img src="images/Cloudly-images/clear.png" alt="" />
+              <h1 class="temperature">22°C</h1>
+              <h2 class="city pb-5">Karachi</h2>
+              <div class="details d-flex">
+                <div class="col d-flex justify-content-center">
+                  <img src="images/Cloudly-images/humidity.png" alt="" />
+                  <div class="line-height">
+                    <p class="humidity text-start">30%</p>
+                    <p>Humidaty</p>
+                  </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <img src="images/Cloudly-images/wind.png" alt="" />
+                  <div class="line-height">
+                    <p class="wind text-start">6.17</p>
+                    <p>Wind Speed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

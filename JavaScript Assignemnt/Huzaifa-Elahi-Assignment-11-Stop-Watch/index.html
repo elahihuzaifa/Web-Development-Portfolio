@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="section1 pt-5">
+      <div class="container pt-5">
+        <div class="row pt-5">
+          <div class="col-md-12 py-5 w-50 m-auto">
+            <ul class="nav nav-tabs m-auto" id="myTab" role="tablist">
+              <div class="col-md-6 justify-content-center d-flex">
+                <div class="nav_bg_icon">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active headnavbar"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="home-tab-pane"
+                      aria-selected="true"
+                    >
+                      <i class="fa-solid fa-hourglass-end pe-2"></i>TIMER
+                    </button>
+                  </li>
+                </div>
+              </div>
+              <div class="col-md-6 justify-content-center d-flex">
+                <div class="nav_bg_icon">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link headnavbar"
+                      id="profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile-tab-pane"
+                      aria-selected="false"
+                    >
+                      <i class="fa-solid fa-stopwatch pe-2"></i> STOPWATCH
+                    </button>
+                  </li>
+                </div>
+              </div>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home-tab-pane"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+                tabindex="0"
+              >
+                <div class="d-flex timerbox ps-3 py-3">
+                  <div
+                    contenteditable="true"
+                    id="minute"
+                    data-placeholder="5m"
+                    type="number"
+                  >
+                    5
+                  </div>
+                  <p>m</p>
+
+                  <div
+                    contenteditable="true"
+                    id="second"
+                    data-placeholder="00s"
+                    type="number"
+                  >
+                    00
+                  </div>
+                  <p>s</p>
+                </div>
+                <div class="d-flex py-2 btn_bottom px-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary px-3"
+                    onclick="toggletimer()"
+                    id="startTimer"
+                  >
+                    START
+                  </button>
+                  <div class="ps-4">
+                    <button
+                      type="button"
+                      class="btn btn-primary px-3"
+                      onclick="resetTimer()"
+                      id="resetTimer"
+                    >
+                      RESET
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="profile-tab-pane"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+                tabindex="0"
+              >
+                <div id="display" class="py-3 ps-3 d-flex">
+                  <div class="stopwatchnumber" id="watchseconds">0</div>
+                  <p class="ps-1">s</p>
+                  <p class="ps-3" id="watchmilisecd">00</p>
+                </div>
+                <div class="d-flex py-2 btn_bottom px-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary px-3"
+                    onclick="stopwatchToggle()"
+                    id="startTimer"
+                  >
+                    START
+                  </button>
+                  <div class="ps-4">
+                    <button
+                      type="button"
+                      class="btn btn-primary px-3"
+                      onclick="resetStopwatch()"
+                      id="resetTimer"
+                    >
+                      RESET
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

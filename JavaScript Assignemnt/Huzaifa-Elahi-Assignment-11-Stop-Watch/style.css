@@ -1,0 +1,108 @@
+body {
+    background-color: aliceblue;
+
+}
+
+.timerbox {
+    color: rgb(0, 0, 0);
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+    border: none !important;
+    background-color: var(--bs-nav-tabs-link-active-bg-none) !important;
+    color: black;
+}
+
+
+.nav-tabs .nav-link.active {
+    border-bottom: 2px solid #0d6efd;
+    /* Adjust the border color as needed */
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    /* Remove default border */
+    color: black;
+    /* Set the default text color */
+}
+
+.nav-tabs .nav-item {
+    flex: 1;
+    /* Make the nav items evenly distributed */
+}
+
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    --tw-border-opacity: 1;
+    border-bottom: 4px solid rgb(37 99 235 / var(--tw-border-opacity)) !important;
+    color: rgb(7, 7, 255) !important;
+    font-weight: bolder;
+}
+
+
+ul#myTab {
+    border: 1px solid rgb(203 213 225) !important;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px 10px 0px 0px;
+    background-color: white;
+}
+
+div#home-tab-pane {
+    border: 1px solid rgb(203 213 225) !important;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+}
+
+#minute {
+    font-size: 60px;
+}
+
+#second {
+    font-size: 60px;
+}
+
+.timerbox p {
+    display: flex;
+    align-items: end;
+    font-size: 29px;
+    padding-top: 35px;
+    padding-right: 11px;
+}
+
+.card1 {
+    margin: auto;
+}
+
+.btn_bottom {
+    font-size: 11px;
+    font-weight: bold;
+    /* border-block-start: inherit */
+    border: 1px solid rgb(203 213 225) !important;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+}
+
+.btn_bottom .btn {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 16px;
+    background-color: #1a73e8;
+    border: 1px solid #1a73e8;
+    border-radius: 0 !important;
+
+}
+
+/* stopwatch css */
+#display {
+    font-size: 60px;
+    border: 1px solid rgb(203 213 225) !important;
+    background-color: white;
+}
+
+#display p {
+    font-size: 29px !important;
+    margin-top: 34px;
+}

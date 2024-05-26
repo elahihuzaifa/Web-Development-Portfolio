@@ -1,0 +1,115 @@
+body {
+    background-image: url(images/v1015-115a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 700;
+
+}
+
+.navbar-brand img {
+    width: 54%;
+    height: 115px;
+}
+
+.bg-body-tertiary {
+    background: transparent !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px !important;
+    background-color: none !important;
+}
+
+.container-fluid {
+    /* background: linear-gradient(150deg, #a4b0e2, #2a1c4c 100%) !important; */
+
+
+}
+
+
+
+button {
+    background: none;
+    border: none;
+}
+
+input {
+    width: 75%;
+    border-radius: 20px;
+    border: none;
+
+}
+
+.card {
+    width: 40% !important;
+    border-radius: 40px;
+    background: linear-gradient(150deg, #a4b0e2, #2a1c4c 100%);
+    border: none;
+
+
+}
+
+h1.temperature {
+    font-size: 87px;
+    /* margin-bottom: -20px; */
+    margin-top: -20px;
+}
+
+.col {
+    gap: 13px;
+    align-items: center;
+}
+
+.line-height {
+    line-height: 0.2em;
+}
+
+.humidity {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 0.2em;
+}
+
+.col img {
+    width: 20%;
+}
+
+.wind {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.weather {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 80% !important;
+        /* Adjust as needed for smaller screens */
+    }
+}
+
+@media (max-width: 425px) {
+    input {
+        width: 70% !important;
+        border-radius: 20px;
+        border: none;
+
+    }
+
+    button {
+        padding: 0 !important;
+    }
+
+    button img {
+        width: 88% !important;
+
+    }
+
+}
